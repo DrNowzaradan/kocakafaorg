@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#152028" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="hakkımızda.css" />
+    <link rel="icon" type="image/jpg" href="../../Görseller/logomavi.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      href="C:\Users\enesa\Desktop\kodlar\FontAwesome/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--En üstteki pembe alan-->
+    <div class="topheader-color">
+      <a class="phone-contact">
+        <div class="socialmedia-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="number">(0212) 660 00 66</div>
+      </a>
+      <div class="socialmediacontainer">
+        <p>Sosyal medyada bizi takip edin</p>
+        <br />
+        <a
+          target="_blank"
+          class="fadewrapper"
+          href="https://www.facebook.com/groups/1573367556221629/"
+        >
+          <div class="socialmedia-button">
+            <div class="socialmedia-icon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <strong>Facebook</strong>
+          </div>
+        </a>
+        <a
+          class="fadewrapper"
+          target="_blank"
+          href="https://www.instagram.com/_kocakafa/"
+        >
+          <div class="socialmedia-button">
+            <div class="socialmedia-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <strong>İnstagram</strong>
+          </div>
+        </a>
+        <a
+          target="_blank"
+          class="fadewrapper"
+          href="https://www.youtube.com/c/kocakafaee%C4%9Fitim"
+        >
+          <div class="socialmedia-button">
+            <div class="socialmedia-icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <strong>Youtube</strong>
+          </div>
+        </a>
+        <a
+          target="_blank"
+          class="fadewrapper"
+          href="https://twitter.com/KocakafaE"
+        >
+          <div class="socialmedia-button">
+            <div class="socialmedia-icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <strong>Twitter</strong>
+          </div>
+        </a>
+      </div>
+      <a class="signInlink"><i class="fas fa-sign-in-alt"></i>Giriş</a>
+    </div>
+    <!--En üstteki pembe alan bitişi-->
+
+    <!--Header alanı-->
+    <header>
+      <!--Büyük ekranlar için-->
+      <div class="bigscreen-header">
+        <img src="../Görseller/logo.jpg" />
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../Anasayfa/index.html">Anasayfa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Kurslarımız
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-light"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="../Eğitimler/eğitimler.html"
+                  >EKPSS Kursları</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">KPSS Kursları</a></li>
+              <li><a class="dropdown-item" href="#">Açık Lise</a></li>
+              <li><a class="dropdown-item" href="#">Açık Ortaokul</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./hakkımızda.html"
+              >Hakkımızda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../İletişim/iletişim.html">İletişim</a>
+          </li>
+        </ul>
+
+        <a href="https://lms.kocakafa.org/OturumAcma" class="signInbutton"
+          >Giriş</a
+        >
+      </div>
+      <!----------------------Küçük ekranlar için--------------------------------->
+      <div class="smallscreen-header">
+        <img src="../Görseller/logo.jpg" height="74" />
+        <a
+          onclick="toggleSidebar()"
+          class="sidebar-togglebutton"
+          id="sidebar-button"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </div>
+
+      <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+          <img src="../Görseller/logo.jpg" height="74" />
+          <a
+            onclick="toggleSidebar()"
+            class="sidebar-closebutton"
+            id="sidebar-closebutton"
+          >
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../Anasayfa/index.html">Anasayfa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDarkDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Kurslarımız
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-light"
+              aria-labelledby="navbarDarkDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="../Eğitimler/eğitimler.html"
+                  >EKPSS Kursları</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">KPSS Kursları</a></li>
+              <li><a class="dropdown-item" href="#">Açık Lise</a></li>
+              <li><a class="dropdown-item" href="#">Açık Ortaokul</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./hakkımızda.html"
+              >Hakkımızda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../İletişim/iletişim.html">İletişim</a>
+          </li>
+        </ul>
+        <a href="https://lms.kocakafa.org/OturumAcma" class="signInbutton"
+          >Giriş yap</a
+        >
+      </div>
+    </header>
+    <!--Header alanı bitişi-->
+
+    <!--İçerik alanı-->
+    <div class="wrapper" id="wrapper">
+      <div class="bgimg-1 bgimg">
+        <div class="caption">
+          <span class="border">HAKKIMIZDA</span>
+        </div>
+      </div>
+      <div class="aboutus-container">
+        <div class="aboutus-text">
+          İstanbul merkezli olarak 1994 yılında Murat Kursları olarak eğitim
+          hayatına başlayan ÇAĞDAŞ ÇÖZÜM AKADEMİ, eğitimindeki tutarlılık ve
+          gerçek sınav formatlarına yakın özgün içerikli kurs ve yayınları ile
+          zamanında Türkiye'nin ilk akla gelen kurumu olmuştur. 2000 yılında
+          Murat Kurslarından ayrılarak KPSS,DGS ve ALES kurslarında
+          başarılarımız daha ilerilere götürmek için ÇAĞDAŞ ÇÖZÜM AKADEMİ’yi
+          kurduk ve uzun yıllar İstanbul’da 4 farklı ilçede binlerce merkezi
+          sınavlara hazırlanan arkadaşlarımız özgün kurs ve yayınlarımızla yol
+          gösterip destek olduk . 2011 yılından itibaren Bakırköy ve Beşiktaş
+          şubelerimizle ÖMSS 2012 için engelli arkadaşlarımıza İstanbul
+          içerisinde kurslar düzenledik. Bu alanda tüm Türkiye’de ilk ve tek
+          kurum olma özelliğini hala sürdürmekteyiz.
+        </div>
+      </div>
+      <div class="aboutus-container even">
+        <div class="aboutus-text">
+          2018 yılından itibaren yayın dershaneciliklerinin tüm Türkiye’de
+          gelişmesi sonucu daha da kurumsal yapıya dönüşerek kendi markamız olan
+          www.kocakafa.org’u açtık. Bu marka ile tüm eğitim bilgi ve
+          birikimlerimizi hem yayıncılık hem de Online eğitimler ile tüm
+          Türkiye’ye yaydık. Çağdaş Çözüm’ün kurumsal yapısı, güçlü yayın
+          desteği, profesyonel öğretmen kadrosu, verimli eğitim ve çalışma
+          ortamı, bireysel rehberlik hizmeti, yenilikçi, dinamik ve rekabetçi
+          eğitim anlayışımız ile kısa zamanda tüm Türkiye’de saygın bir kurs
+          olarak yerimiz aldık.
+        </div>
+      </div>
+      <div class="bgimg-2 bgimg"></div>
+      <div class="aboutus-container">
+        <div class="aboutus-text">
+          Kocakafa eğitim olarak EKPSS Memurluk ,KPSS Öğretmenlik, KPSS
+          Memurluk, KPSS-Müfettişlik Uzmanlık, ALES (Akademik Personel ve
+          Lisansüstü Eğitim Sınavı), YDS (Yabancı Dil Sınavı), DGS (Dikey Geçiş
+          Sınavları) hazırlık kursları ile; iş hayatı ve akademik kariyer için
+          tam donanımlı, sektörde aranan değerlere sahip bireyler yetiştirmeyi
+          hedeflemektedir.
+        </div>
+      </div>
+      <div class="aboutus-container even">
+        <div class="aboutus-text">
+          Öğrencilerimizin sınavlardaki başarıları, dereceleri ve kamu
+          kurumlarına yerleştirme oranlarımızdaki yükseliş, doğru yolda
+          ilerlediğimizin ve aynı zamanda sektördeki lider olma vizyonumuzun da
+          önemli bir göstergesidir.
+        </div>
+      </div>
+      <div class="bgimg-3 bgimg"></div>
+      <div class="aboutus-container">
+        <div class="aboutus-text">
+          <div style="text-align: center; font-size: 20px">MİSYONUMUZ</div>
+          <br /><br />
+          Eğitim ve öğretim hizmetlerini çağdaş ölçütler doğrultusunda yürüten,
+          sürekli gelişen, nitelikli ve yenilikçi bir kurum olarak hizmet
+          vermekteyiz. Sektörel tecrübenin akademik eğitimle buluşmasından doğan
+          kurumumuz, sunduğu kariyer planlarıyla beraber öğrencilerini
+          girecekleri sınavlara tam donanımlı olarak hazırlar. Eğitimlerimizde
+          öğrenci memnuniyetini sağlamak en büyük ilkemizdir. Hayallerini
+          gerçekleştirmek için yılmadan çalışan sizleri, güzel günlere
+          hazırlamanın mutluluğunu ve gururunu yaşıyoruz...
+        </div>
+      </div>
+      <div class="aboutus-container even">
+        <div class="aboutus-text">
+          <div style="text-align: center; font-size: 20px">VİZYONUMUZ</div>
+          <br /><br />
+          Bilgiyi ve başarıyı en önemli değerler olarak benimsemeye devam
+          ederek, eğitim sektöründeki öncü konumumuzu daha da güçlendirmek.
+          Eğitim ve öğretim hizmetlerini çağdaş ölçütler doğrultusunda yürüten,
+          sürekli gelişen, nitelikli ve yenilikçi bir kurum olarak devam etmek.
+          Alanında çağımızın bilgi ve teknolojilerini özümseyip kullanarak,
+          kendine güvenen, duyarlı ve saygılı nesiller yetiştirmek.
+        </div>
+      </div>
+      <div class="bgimg-4 bgimg"></div>
+      <div class="aboutus-container">
+        <div class="aboutus-text">
+          <div style="font-size: 20px; margin-bottom: 30px">TEMEL DEĞERLER</div>
+          <ul>
+            <li>Adalet/Hakkaniyet</li>
+            <li>Güvenilirlik</li>
+            <li>İnsana Değer Vermek</li>
+            <li>Açıklık (Şeffaflık)/Saydamlık</li>
+            <li>Sürekli Gelişme ve Geliştirme</li>
+            <li>İşbirliği (Takım Ruhu) ve Ortak Sinerjinin Gücüne İnanmak</li>
+            <li>
+              Ailevi ve Manevi Değerlere Sahip Çıkmak • Görev ve Sorumluluk
+              Duygusu
+            </li>
+            <li>Yenilikçi ve Yaratıcı</li>
+            <li>Liderlik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--İçerik alanı bitişi-->
+
+    <!--footer alanı-->
+    <footer>
+      <div class="footericon-container">
+        <div class="footer-header footericon-header">
+          Sosyal medyada bizi takip edin
+        </div>
+        <div class="footersocialmedia-container">
+          <a
+            target="_blank"
+            class="footer-fadewrapper"
+            href="https://www.facebook.com/groups/1573367556221629/"
+          >
+            <div class="socialmedia-button">
+              <div class="socialmedia-icon">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <strong>Facebook</strong>
+            </div>
+          </a>
+          <a
+            class="footer-fadewrapper"
+            target="_blank"
+            href="https://www.instagram.com/_kocakafa/"
+          >
+            <div class="socialmedia-button">
+              <div class="socialmedia-icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <strong>İnstagram</strong>
+            </div>
+          </a>
+          <a
+            target="_blank"
+            class="footer-fadewrapper"
+            href="https://www.youtube.com/c/kocakafaee%C4%9Fitim"
+          >
+            <div class="socialmedia-button">
+              <div class="socialmedia-icon">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <strong>Youtube</strong>
+            </div>
+          </a>
+          <a
+            target="_blank"
+            class="footer-fadewrapper"
+            href="https://twitter.com/KocakafaE"
+          >
+            <div class="socialmedia-button">
+              <div class="socialmedia-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <strong>Twitter</strong>
+            </div>
+          </a>
+        </div>
+        <!---------------------------küçük ekranlar için----------------------->
+        <div class="smallsocialmediacontainer">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/groups/1573367556221629/"
+            >Facebook
+          </a>
+          <a target="_blank" href="https://www.instagram.com/_kocakafa/"
+            >İnstagram</a
+          >
+          <a
+            target="_blank"
+            href="https://www.youtube.com/c/kocakafaee%C4%9Fitim"
+            >Youtube</a
+          >
+          <a target="_blank" href="https://twitter.com/KocakafaE">Twitter</a>
+        </div>
+      </div>
+      <div class="footercontact-container">
+        <div class="footer-header">Bizimle iletişime geçin</div>
+        <div class="footer-text">
+          <b>E-Posta:</b> bilgedost06@gmail.com <br />
+          <b>Telefon:</b> (0212) 660 00 66 <br />
+          <b>GSM:</b> (0532) 354 81 98 <br />
+          <b>Adres:</b> Yenimahalle Mahallesi, Mektep Arkası Sk. No:3, 34142
+          Bakırköy/İstanbul
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script lang="javascript" type="text/javascript">
+      var wrapper = document.getElementById("wrapper");
+      var sideBar = document.getElementById("sidebar");
+      var modal = document.getElementById("modal");
+      var modal_close = document.getElementById("modal-close");
+
+      function toggleSidebar() {
+        sideBar.classList.toggle("show");
+      }
+      function closeModal() {
+        modal.classList.remove("scaleon");
+        modal.classList.toggle("scaleoff");
+      }
+    </script>
+  </body>
+</html>
